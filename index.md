@@ -1,6 +1,6 @@
 # Politique de confidentialité — SafeVault
 
-*Dernière mise à jour : 22 octobre 2026*
+*Dernière mise à jour : 22 octobre 2026 (version 1.2.4)*
 
 [English version below](#english-version)
 
@@ -46,6 +46,7 @@ SafeVault ne collecte aucune donnée personnelle, ne se connecte à aucun serveu
 - **Sauvegarde chiffrée** : vous pouvez exporter votre coffre dans un fichier chiffré, protégé par un mot de passe d'export que vous choisissez. Ce fichier n'est envoyé nulle part par l'application ; c'est vous qui le conservez ou le partagez.
 - **Rapport de diagnostic** : vous pouvez copier un rapport technique dans le presse-papiers pour le transmettre vous-même. Il n'est jamais envoyé automatiquement.
 - **Partage de l'application** : le bouton « Partager SafeVault » utilise le menu de partage d'Android pour envoyer un lien vers la fiche de l'application ; aucune donnée de votre coffre n'est incluse.
+- **Lien vers cette politique** : le bouton « Politique de confidentialité » de l'écran « À propos » demande à Android d'ouvrir cette page dans le navigateur de votre téléphone. C'est le navigateur, et non SafeVault, qui se connecte alors à Internet ; aucune donnée de votre coffre n'est transmise.
 
 ## 8. Vos droits
 
@@ -69,7 +70,7 @@ Christian Luvunga Mayedi — chrisluvunga@gmail.com
 
 # Privacy Policy — SafeVault
 
-*Last updated: October 22, 2026*
+*Last updated: October 22, 2026 (version 1.2.4)*
 
 This policy describes how the Android app **SafeVault** (password manager) handles your information. The app is developed by Christian Luvunga Mayedi.
 
@@ -113,6 +114,7 @@ When you create your vault, SafeVault gives you a 16-word recovery phrase that l
 - **Encrypted backup**: you can export your vault to an encrypted file protected by an export password of your choice. The app does not send this file anywhere; you keep or share it yourself.
 - **Diagnostic report**: you can copy a technical report to the clipboard to pass it on yourself. It is never sent automatically.
 - **Sharing the app**: the "Share SafeVault" button uses Android's share menu to send a link to the app's store page; no vault data is included.
+- **Link to this policy**: the "Privacy Policy" button on the "About" screen asks Android to open this page in your phone's browser. It is the browser, not SafeVault, that then connects to the Internet; no vault data is transmitted.
 
 ## 8. Your rights
 

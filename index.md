@@ -1,6 +1,6 @@
 # Politique de confidentialité — SafeVault
 
-*Dernière mise à jour : 20 octobre 2026*
+*Dernière mise à jour : 22 octobre 2026*
 
 [English version below](#english-version)
 
@@ -13,7 +13,7 @@ SafeVault ne collecte aucune donnée personnelle, ne se connecte à aucun serveu
 ## 2. Fonctionnement hors ligne
 
 - **Aucun serveur et aucun compte** : l'application n'a pas d'infrastructure serveur, pas d'API de stockage distante et ne vous demande aucune inscription.
-- **Aucun envoi sur Internet** : vos identifiants, mots de passe, clés et secrets ne quittent jamais votre appareil. L'application est configurée pour bloquer toute connexion réseau.
+- **Aucun envoi sur Internet** : vos identifiants, mots de passe, clés et secrets ne quittent jamais votre appareil. L'application est configurée pour bloquer toute connexion réseau et ne déclare aucune permission d'accès à Internet.
 - **Aucun accès du développeur** : le développeur ne peut techniquement ni consulter, ni récupérer, ni réinitialiser vos données, votre mot de passe maître ou votre phrase de secours.
 
 ## 3. Chiffrement et stockage local
@@ -38,11 +38,11 @@ SafeVault ne collecte aucune donnée personnelle, ne se connecte à aucun serveu
 ## 6. Autorisations Android
 
 - **Biométrie (USE_BIOMETRIC, USE_FINGERPRINT)** : uniquement pour déverrouiller le coffre localement avec votre empreinte, si vous l'activez. La vérification est faite par le système Android ; SafeVault n'a jamais accès à votre empreinte.
-- **Internet et état du réseau (INTERNET, ACCESS_NETWORK_STATE)** : ces autorisations sont déclarées par la plateforme technique de l'application, mais SafeVault ne les utilise pas : aucune connexion n'est effectuée.
+- **Aucune autorisation réseau** : à partir de la version 1.2.3, SafeVault ne déclare ni la permission Internet ni celle de l'état du réseau. L'application ne peut donc pas se connecter à Internet.
 
 ## 7. Presse-papiers, sauvegardes et partage faits par vous
 
-- **Presse-papiers** : lorsque vous copiez un mot de passe depuis votre liste, il est effacé du presse-papiers après un court délai. Pendant ce temps, d'autres applications de votre appareil peuvent y avoir accès.
+- **Presse-papiers** : lorsque vous copiez un mot de passe depuis votre liste ou depuis une fiche, il est effacé du presse-papiers après 30 secondes, tant que l'application reste ouverte. Pendant ce temps, d'autres applications de votre appareil peuvent y avoir accès.
 - **Sauvegarde chiffrée** : vous pouvez exporter votre coffre dans un fichier chiffré, protégé par un mot de passe d'export que vous choisissez. Ce fichier n'est envoyé nulle part par l'application ; c'est vous qui le conservez ou le partagez.
 - **Rapport de diagnostic** : vous pouvez copier un rapport technique dans le presse-papiers pour le transmettre vous-même. Il n'est jamais envoyé automatiquement.
 - **Partage de l'application** : le bouton « Partager SafeVault » utilise le menu de partage d'Android pour envoyer un lien vers la fiche de l'application ; aucune donnée de votre coffre n'est incluse.
@@ -69,7 +69,7 @@ Christian Luvunga Mayedi — chrisluvunga@gmail.com
 
 # Privacy Policy — SafeVault
 
-*Last updated: October 20, 2026*
+*Last updated: October 22, 2026*
 
 This policy describes how the Android app **SafeVault** (password manager) handles your information. The app is developed by Christian Luvunga Mayedi.
 
@@ -80,7 +80,7 @@ SafeVault collects no personal data, connects to no server and shares nothing wi
 ## 2. Offline operation
 
 - **No server and no account**: the app has no server infrastructure, no remote storage API and does not ask you to sign up.
-- **Nothing is sent over the Internet**: your usernames, passwords, keys and secrets never leave your device. The app is configured to block all network connections.
+- **Nothing is sent over the Internet**: your usernames, passwords, keys and secrets never leave your device. The app is configured to block all network connections and declares no Internet permission.
 - **No developer access**: the developer cannot technically view, recover or reset your data, your master password or your recovery phrase.
 
 ## 3. Encryption and local storage
@@ -105,11 +105,11 @@ When you create your vault, SafeVault gives you a 16-word recovery phrase that l
 ## 6. Android permissions
 
 - **Biometrics (USE_BIOMETRIC, USE_FINGERPRINT)**: only to unlock the vault locally with your fingerprint, if you enable it. Verification is done by the Android system; SafeVault never has access to your fingerprint.
-- **Internet and network state (INTERNET, ACCESS_NETWORK_STATE)**: these permissions are declared by the app's technical platform, but SafeVault does not use them: no connection is made.
+- **No network permissions**: starting with version 1.2.3, SafeVault declares neither the Internet permission nor the network-state permission. The app therefore cannot connect to the Internet.
 
 ## 7. Clipboard, backups and sharing done by you
 
-- **Clipboard**: when you copy a password from your list, it is cleared from the clipboard after a short delay. During that time, other apps on your device may be able to access it.
+- **Clipboard**: when you copy a password from your list or from an entry, it is cleared from the clipboard after 30 seconds, as long as the app stays open. During that time, other apps on your device may be able to access it.
 - **Encrypted backup**: you can export your vault to an encrypted file protected by an export password of your choice. The app does not send this file anywhere; you keep or share it yourself.
 - **Diagnostic report**: you can copy a technical report to the clipboard to pass it on yourself. It is never sent automatically.
 - **Sharing the app**: the "Share SafeVault" button uses Android's share menu to send a link to the app's store page; no vault data is included.

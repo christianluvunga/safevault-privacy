@@ -1,6 +1,6 @@
 # Politique de confidentialité — SafeVault
 
-*Dernière mise à jour : 22 octobre 2026 (version 1.2.4)*
+*Dernière mise à jour : 5 novembre 2026 (version 1.4)*
 
 [English version below](#english-version)
 
@@ -23,6 +23,8 @@ SafeVault ne collecte aucune donnée personnelle, ne se connecte à aucun serveu
 - Le coffre se **verrouille automatiquement** après 3 minutes d'inactivité et lorsque l'application passe en arrière-plan. Les données déchiffrées sont alors retirées de l'écran et de la mémoire de l'application.
 - Les captures d'écran de l'application sont bloquées.
 - La sauvegarde automatique d'Android est désactivée pour SafeVault.
+- **Corbeille** : lorsque vous supprimez un compte, il est d'abord déplacé dans une corbeille située sur votre appareil et chiffrée comme le reste du coffre. Il y reste jusqu'à ce que vous le restauriez, le supprimiez définitivement ou vidiez la corbeille : rien n'est supprimé automatiquement. La corbeille n'affiche jamais les mots de passe ni les identifiants.
+- **Préférences locales** : certains réglages non sensibles (langue, mode de tri, état de l'invitation à noter l'application, du tutoriel et du rappel de sauvegarde) sont enregistrés sur votre appareil. Ils ne contiennent aucune donnée de votre coffre et ne sont jamais transmis.
 
 ## 4. Phrase de secours
 
@@ -43,14 +45,16 @@ SafeVault ne collecte aucune donnée personnelle, ne se connecte à aucun serveu
 ## 7. Presse-papiers, sauvegardes et partage faits par vous
 
 - **Presse-papiers** : lorsque vous copiez un mot de passe depuis votre liste ou depuis une fiche, il est effacé du presse-papiers après 30 secondes, tant que l'application reste ouverte. Pendant ce temps, d'autres applications de votre appareil peuvent y avoir accès.
-- **Sauvegarde chiffrée** : vous pouvez exporter votre coffre dans un fichier chiffré, protégé par un mot de passe d'export que vous choisissez. Ce fichier n'est envoyé nulle part par l'application ; c'est vous qui le conservez ou le partagez.
+- **Sauvegarde chiffrée** : vous pouvez exporter votre coffre dans un fichier chiffré, protégé par un mot de passe d'export que vous choisissez. Ce fichier inclut aussi les comptes présents dans la corbeille. Il n'est envoyé nulle part par l'application ; c'est vous qui le conservez ou le partagez.
+- **Export CSV** : vous pouvez aussi exporter vos comptes actifs dans un fichier CSV **non chiffré**, lisible par toute personne ou application qui y accède. Les comptes de la corbeille n'y figurent pas. Conservez ce fichier avec précaution et supprimez-le dès que vous n'en avez plus besoin.
 - **Rapport de diagnostic** : vous pouvez copier un rapport technique dans le presse-papiers pour le transmettre vous-même. Il n'est jamais envoyé automatiquement.
 - **Partage de l'application** : le bouton « Partager SafeVault » utilise le menu de partage d'Android pour envoyer un lien vers la fiche de l'application ; aucune donnée de votre coffre n'est incluse.
 - **Lien vers cette politique** : le bouton « Politique de confidentialité » de l'écran « À propos » demande à Android d'ouvrir cette page dans le navigateur de votre téléphone. C'est le navigateur, et non SafeVault, qui se connecte alors à Internet ; aucune donnée de votre coffre n'est transmise.
+- **Noter l'application** : le bouton « Noter » (écran « À propos » ou invitation occasionnelle, que vous pouvez refuser définitivement) demande à Android d'ouvrir la fiche de SafeVault sur le Play Store. C'est le Play Store, et non SafeVault, qui se connecte alors à Internet ; aucune donnée de votre coffre n'est transmise.
 
 ## 8. Vos droits
 
-Comme SafeVault ne collecte aucune donnée personnelle, vos données sont entièrement sous votre contrôle. Vous pouvez les consulter dans le coffre déverrouillé, les exporter, supprimer des entrées une à une, réinitialiser le coffre depuis l'application, ou désinstaller SafeVault, ce qui supprime définitivement toutes les données locales et les clés associées.
+Comme SafeVault ne collecte aucune donnée personnelle, vos données sont entièrement sous votre contrôle. Vous pouvez les consulter dans le coffre déverrouillé, les exporter, supprimer des entrées une à une (avec une corbeille pour les restaurer), vider la corbeille, réinitialiser le coffre depuis l'application, ou désinstaller SafeVault, ce qui supprime définitivement toutes les données locales et les clés associées.
 
 ## 9. Enfants
 
@@ -70,7 +74,7 @@ Christian Luvunga Mayedi — chrisluvunga@gmail.com
 
 # Privacy Policy — SafeVault
 
-*Last updated: October 22, 2026 (version 1.2.4)*
+*Last updated: November 5, 2026 (version 1.4)*
 
 This policy describes how the Android app **SafeVault** (password manager) handles your information. The app is developed by Christian Luvunga Mayedi.
 
@@ -91,6 +95,8 @@ SafeVault collects no personal data, connects to no server and shares nothing wi
 - The vault **locks automatically** after 3 minutes of inactivity and when the app goes to the background. Decrypted data is then removed from the screen and from the app's memory.
 - Screenshots of the app are blocked.
 - Android automatic backup is disabled for SafeVault.
+- **Trash**: when you delete an account, it is first moved to a trash stored on your device and encrypted like the rest of the vault. It stays there until you restore it, permanently delete it or empty the trash: nothing is deleted automatically. The trash never displays passwords or usernames.
+- **Local preferences**: some non-sensitive settings (language, sort order, and the state of the rating invitation, the tutorial and the backup reminder) are stored on your device. They contain no vault data and are never transmitted.
 
 ## 4. Recovery phrase
 
@@ -111,14 +117,16 @@ When you create your vault, SafeVault gives you a 16-word recovery phrase that l
 ## 7. Clipboard, backups and sharing done by you
 
 - **Clipboard**: when you copy a password from your list or from an entry, it is cleared from the clipboard after 30 seconds, as long as the app stays open. During that time, other apps on your device may be able to access it.
-- **Encrypted backup**: you can export your vault to an encrypted file protected by an export password of your choice. The app does not send this file anywhere; you keep or share it yourself.
+- **Encrypted backup**: you can export your vault to an encrypted file protected by an export password of your choice. This file also includes the accounts in the trash. The app does not send this file anywhere; you keep or share it yourself.
+- **CSV export**: you can also export your active accounts to an **unencrypted** CSV file, readable by anyone or any app that can access it. Accounts in the trash are not included. Keep this file carefully and delete it as soon as you no longer need it.
 - **Diagnostic report**: you can copy a technical report to the clipboard to pass it on yourself. It is never sent automatically.
 - **Sharing the app**: the "Share SafeVault" button uses Android's share menu to send a link to the app's store page; no vault data is included.
 - **Link to this policy**: the "Privacy Policy" button on the "About" screen asks Android to open this page in your phone's browser. It is the browser, not SafeVault, that then connects to the Internet; no vault data is transmitted.
+- **Rating the app**: the "Rate" button (on the "About" screen, or an occasional invitation that you can dismiss permanently) asks Android to open SafeVault's page on the Play Store. It is the Play Store, not SafeVault, that then connects to the Internet; no vault data is transmitted.
 
 ## 8. Your rights
 
-Because SafeVault collects no personal data, your data is entirely under your control. You can view it in the unlocked vault, export it, delete entries one by one, reset the vault from the app, or uninstall SafeVault, which permanently deletes all local data and associated keys.
+Because SafeVault collects no personal data, your data is entirely under your control. You can view it in the unlocked vault, export it, delete entries one by one (with a trash to restore them), empty the trash, reset the vault from the app, or uninstall SafeVault, which permanently deletes all local data and associated keys.
 
 ## 9. Children
 

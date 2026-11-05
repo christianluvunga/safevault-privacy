@@ -66,7 +66,7 @@ Cette politique peut être mise à jour. La date de dernière mise à jour figur
 
 ## 11. Contact
 
-Christian Luvunga Mayedi — chrisluvunga@gmail.com
+Christian Luvunga Mayedi — contact@luvunga.com
 
 ---
 
@@ -138,4 +138,4 @@ This policy may be updated. The date of the last update appears at the top of th
 
 ## 11. Contact
 
-Christian Luvunga Mayedi — chrisluvunga@gmail.com
+Christian Luvunga Mayedi — contact@luvunga.com
